@@ -1,0 +1,74 @@
+{
+	"id": "integer",
+	"gamername": "string",
+	"charactername": "string",
+	"vitality": "integer",
+	"ca": "integer",
+	"gamerclass": "string",
+	"level": "integer",
+	"inventory": [
+		{
+			"id": "integer",
+			"name": "string",
+			"weight": "integer",
+			"price": "integer",
+			"description": "string",
+			"categoria": "string"
+		},
+		{
+			"id": "integer",
+			"name": "string",
+			"weight": "integer",
+			"price": "integer",
+			"description": "string",
+			"categoria": "string"
+		}
+	],
+	"clothing": {
+		"id": "integer",
+		"body": {
+			"id": "integer",
+			"head": "string",
+			"neck": "string",
+			"shoulders": "string",
+			"arms": "string",
+			"gloves": "string",
+			"armor": "string",
+			"legs": "string",
+			"feet": "string"
+		}
+	},
+	"weapons": [
+		{
+			"id": "integer",
+			"nombre": "string",
+			"bonif": "string",
+			"critico": "string",
+			"tipo": "string",
+			"alcance": "string",
+			"municion": "string",
+			"daño": "string",
+			"otherInf": "string"
+		},
+		{
+			"id": "integer",
+			"nombre": "string",
+			"bonif": "string",
+			"critico": "string",
+			"tipo": "string",
+			"alcance": "string",
+			"municion": "string",
+			"daño": "string",
+			"otherInf": "string"
+		}
+	],
+	"attribute": {
+		"id": "integer",
+		"force": "integer",
+		"skill": "integer",
+		"physique": "integer",
+		"intelligence": "integer",
+		"wisdom": "integer",
+		"charisma": "integer"
+	}
+}
