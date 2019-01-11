@@ -3,7 +3,6 @@ package com.isgartu.model;
 import java.io.Serializable;
 import java.util.List;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -45,6 +44,7 @@ public class Player implements Serializable{
 	@OneToMany
 	private List<Item> inventory;
 	
+	//Change like item/weapon
 	@ManyToOne(fetch = FetchType.EAGER, optional = false)
 	@JoinColumn(name = "clothing_id", nullable = false)
 	@OnDelete(action = OnDeleteAction.CASCADE)
@@ -53,9 +53,9 @@ public class Player implements Serializable{
 	@OneToMany
 	private List<Weapon> weapon;
 
-//	@ManyToOne(fetch = FetchType.EAGER, optional = false)
-//	@JoinColumn(name = "attribute_id", nullable = false, referencedColumnName = "attribute")
-//	@OnDelete(action = OnDeleteAction.CASCADE)
-//	private Attribute attribute;
+	@ManyToOne(fetch = FetchType.EAGER, optional = false)
+	@JoinColumn(name = "qualities_id", nullable = false)
+	@OnDelete(action = OnDeleteAction.CASCADE)
+	private Qualities qualities;
 	
 }
