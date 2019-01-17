@@ -37,12 +37,38 @@ Url: https://www.heidisql.com/download.php
 localhost:8080/pathfinder/v1/players  
 Shows all global players information  
 
-localhost:8080/pathfinder/v1/players/1  
+localhost:8080/pathfinder/v1/players/{playerId}  
 Show details player information  
 
-localhost:8080/pathfinder/v1/players/search?charactername=charactername1  
+localhost:8080/pathfinder/v1/players/search?charactername={charactername}  
 Search player information by charactername  
 
-localhost:8080/pathfinder/v1/players/search?gamername=gamername2  
+localhost:8080/pathfinder/v1/players/search?gamername={gamername}  
 Search player information by gamername  
+
+### Weapons
+
+localhost:8080/pathfinder/v1/weapons  
+Shows all global weapons information  
+
+localhost:8080/pathfinder/v1/weapons/{weaponId}  
+Show details weapon information  
+
+localhost:8080/pathfinder/v1/weapons/search?weaponname={weaponname}  
+Search weapon information by weaponname  
+
+localhost:8080/pathfinder/v1/weapons/search?weaponbonus={weaponbonus}  
+Search weapon information by weaponbonus  
+
+localhost:8080/pathfinder/v1/weapons/search?weaponcritical={weaponcritical}  
+Search weapon information by weaponcritical  
+
+localhost:8080/pathfinder/v1/weapons/search?weapontype={weapontype}  
+Search weapon information by weapontype  
+
+localhost:8080/pathfinder/v1/weapons/search?weaponscope={weaponscope}  
+Search weapon information by weaponscope  
+
+localhost:8080/pathfinder/v1/weapons/search?weapondamage={weapondamage}  
+Search weapon information by weapondamage  
 
